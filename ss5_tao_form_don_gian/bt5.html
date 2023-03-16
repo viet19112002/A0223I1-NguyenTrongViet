@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        label {
+            color: blue;
+            text-align: right;
+
+        }
+    </style>
 </head>
 <body>
-  <form action="#" method="get">
-    <h1 style="background-color:  red"> SỞ THÍCH CỦA BẠN </h1>
-        <label for="name" style="accent-color: blue">Họ Và Tên</label>
-        <input type="text" id="name" name="name"> <br>
-    <label for="Email" style="accent-color: blue">Email</label>
-    <input type="text" id="Email" Email="Email"> <br>
 
-    <label> Sở Thích </label>
-    <input type="checkbox" name="hobby"> Thể thao
-    <input type="checkbox" name="hobby"> Âm Nhạc
-    <input type="checkbox" name="hobby"> Đọc sách <br>
-    <input type="checkbox" name="hobby"> lướt web
-    <input type="checkbox" name="hobby"> Chơi game
-    <input type="checkbox" name="hobby"> Điện ảnh <br>
-    <input type="checkbox" name="hobby"> Du lịch <br>
-    <button type="submit">gữi thông tin</button>
-    <button type="reset" > Nhập lại</button>
-  </form>
+<div style="position: absolute;top:0;bottom:0;left: 0;right:0;margin-left: auto ; margin-right: auto;margin-bottom: auto;margin-top: auto ;height: fit-content ;width: fit-content ; ">
+    <h1 style="background-color:  #ff4c00;text-align: center ;color: #fff;padding-left: 3%;padding-right: 3%"> SỞ THÍCH CỦA BẠN </h1>
+    <form action="#" method="get">
 
+        <table>
+            <tr>
+                <td style="text-align: right;"><label for="name">Họ Và Tên</label></td>
+                <td><input type="text" id="name" name="name"> <br></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label for="Email">Email </label></td>
+                <td><input type="text" id="Email" Email="Email"> <br></td>
+
+            </tr>
+            <tr>
+                <td style="position: relative">
+                    <label style="position: absolute; top: 0 ; right: 0" > Sở Thích   </label>
+                </td>
+                <td style="column-count: 3"  >
+                    <div><input type="checkbox" name="hobby"> Thể thao</div>
+                    <div><input type="checkbox" name="hobby"> Âm Nhạc</div>
+                    <div><input type="checkbox" name="hobby"> Đọc sách</div>
+                    <div><input type="checkbox" name="hobby"> lướt web</div>
+                    <div><input type="checkbox" name="hobby"> Chơi game</div>
+                    <div><input type="checkbox" name="hobby"> Điện ảnh</div>
+                    <div><input type="checkbox" name="hobby"> Du lịch</div>
+                </td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+
+                    <button type="submit">gữi thông tin</button>
+                    <button type="reset"> Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
 
 </body>
 </html>
